@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>AirPure</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- SEO Description -->
+    <meta name="description"
+        content="AirPure provides advanced air purifiers and indoor air quality solutions for cleaner, healthier spaces.">
+
+    <!-- Google Font - Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================================
+     AIRPURE HEADER
+================================= -->
+    <header class="airpure-header" id="airpureHeader">
+
+        <div class="airpure-header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="airpure-logo">
+                <img src="images/logo.png" alt="AirPure">
+            </a>
+
+
+            <!-- Desktop Navigation -->
+            <nav class="airpure-navigation" id="airpureNavigation">
+
+                <ul class="airpure-menu">
+
+                    <!-- Home Dropdown -->
+                    <li class="airpure-menu-item airpure-home-dropdown">
+                        <a href="#" class="airpure-menu-link">
+                            Home
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="airpure-dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <!-- About -->
+                    <li class="airpure-menu-item">
+                        <a href="about.html" class="airpure-menu-link">
+                            About
+                        </a>
+                    </li>
+
+
+                    <!-- Products -->
+                    <li class="airpure-menu-item">
+                        <a href="products.html" class="airpure-menu-link">
+                            Products & Comparison
+                        </a>
+                    </li>
+
+                    <!-- How It Works -->
+                    <li class="airpure-menu-item">
+                        <a href="how-it-works.html" class="airpure-menu-link">
+                            How It Works
+                        </a>
+                    </li>
+
+
+                    <!-- AMC Services -->
+                    <li class="airpure-menu-item">
+                        <a href="amc-services.html" class="airpure-menu-link">
+                            AMC Services
+                        </a>
+                    </li>
+
+
+                    <!-- Contact -->
+                    <li class="airpure-menu-item">
+                        <a href="contact.html" class="airpure-menu-link">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Mobile / Tablet Controls -->
+                <div class="airpure-mobile-controls">
+
+                    <!-- Dark Mode -->
+                    <button class="airpure-control-btn" id="airpureThemeToggle" type="button"
+                        aria-label="Toggle dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Dark Mode</span>
+
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button class="airpure-control-btn" id="airpureRtlToggle" type="button"
+                        aria-label="Toggle RTL mode">
+
+                        <i class="fa-solid fa-right-left"></i>
+                        <span>RTL Mode</span>
+
+                    </button>
+
+
+                    <!-- Login -->
+                    <a href="login.html" class="airpure-login-btn">
+                        <i class="fa-regular fa-user"></i>
+                        Login
+                    </a>
+
+
+                    <!-- Book Demo -->
+                    <a href="demo-booking.html" class="airpure-demo-btn">
+
+                        <i class="fa-regular fa-calendar-check"></i>
+                        Book a Demo
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+            <!-- Desktop Controls -->
+            <div class="airpure-desktop-controls">
+
+                <!-- Dark Mode -->
+                <button class="airpure-icon-btn" id="airpureThemeToggleDesktop" type="button"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+                <button class="airpure-icon-btn" id="airpureRtlToggleDesktop" type="button"
+                    aria-label="Toggle RTL mode">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- Login -->
+                <a href="login.html" class="airpure-login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+
+
+                <!-- Book Demo -->
+                <a href="demo-booking.html" class="airpure-demo-btn">
+
+                    <i class="fa-regular fa-calendar-check"></i>
+                    Book a Demo
+
+                </a>
+
+            </div>
+
+
+            <!-- Menu Toggle -->
+            <button class="airpure-menu-toggle" id="airpureMenuToggle" type="button" aria-label="Open menu"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Page Hero -->
+    <section class="airpure-page-hero">
+
+        <div class="airpure-page-hero-image">
+            <img src="images/contact-hero.jpg" alt="AirPure contact and support">
+        </div>
+
+        <div class="airpure-page-hero-overlay"></div>
+
+        <div class="container">
+            <div class="airpure-page-hero-content">
+
+                <span class="airpure-page-hero-label">
+                    GET IN TOUCH
+                </span>
+
+                <h1>Contact <span>AirPure</span></h1>
+
+                <p>
+                    Have questions about our air purifiers or services?
+                    We're here to help you find the right solution.
+                </p>
+
+                <div class="airpure-page-hero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Contact</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     CONTACT INFORMATION
+========================================= -->
+
+    <section class="airpure-contact-info-section">
+        <div class="container">
+
+            <div class="airpure-contact-info-heading">
+                <span class="airpure-section-label">CONTACT INFORMATION</span>
+
+                <h2>
+                    We're here to help you
+                    <span>breathe better.</span>
+                </h2>
+
+                <p>
+                    Whether you need help choosing a purifier, want to know
+                    more about our services, or need support, get in touch
+                    with the AirPure team.
+                </p>
+            </div>
+
+
+            <div class="airpure-contact-info-grid">
+
+                <!-- Address -->
+                <div class="airpure-contact-info-card">
+
+                    <div class="airpure-contact-info-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="airpure-contact-info-content">
+                        <span>VISIT US</span>
+
+                        <h3>Our Location</h3>
+
+                        <p>
+                            24 Bright Green Avenue,<br>
+                            Chennai, Tamil Nadu
+                        </p>
+
+                        <a href="#" class="airpure-contact-info-link">
+                            Get Directions
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Phone -->
+                <div class="airpure-contact-info-card">
+
+                    <div class="airpure-contact-info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div class="airpure-contact-info-content">
+                        <span>CALL US</span>
+
+                        <h3>Phone Support</h3>
+
+                        <p>
+                            +91 98765 43210<br>
+                            Mon – Sat
+                        </p>
+
+                        <a href="tel:+919876543210" class="airpure-contact-info-link">
+                            Call Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="airpure-contact-info-card">
+
+                    <div class="airpure-contact-info-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="airpure-contact-info-content">
+                        <span>EMAIL US</span>
+
+                        <h3>Email Support</h3>
+
+                        <p>
+                            hello@airpure.com<br>
+                            We reply within 1 day.
+                        </p>
+
+                        <a href="mailto:hello@airpure.com" class="airpure-contact-info-link">
+                            Send Email
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Working Hours -->
+                <div class="airpure-contact-info-card">
+
+                    <div class="airpure-contact-info-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+
+                    <div class="airpure-contact-info-content">
+                        <span>WORKING HOURS</span>
+
+                        <h3>Support Hours</h3>
+
+                        <p>
+                            Monday – Saturday<br>
+                            9:00 AM – 6:00 PM
+                        </p>
+
+                        <a href="#demo-booking" class="airpure-contact-info-link">
+                            Book a Demo
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================
+     CONTACT FORM SECTION
+========================================= -->
+
+    <section class="airpure-contact-form-section" id="contact-form">
+        <div class="container">
+
+            <div class="airpure-contact-form-wrapper">
+
+                <!-- Form Introduction -->
+                <div class="airpure-contact-form-intro">
+
+                    <span class="airpure-section-label">
+                        SEND US A MESSAGE
+                    </span>
+
+                    <h2>
+                        Let's talk about your
+                        <span>indoor air.</span>
+                    </h2>
+
+                    <p>
+                        Tell us what you need and our team will help you
+                        explore the right air purification solution for
+                        your space.
+                    </p>
+
+
+                    <div class="airpure-contact-form-points">
+
+                        <div class="airpure-contact-form-point">
+                            <span class="airpure-contact-form-point-icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+
+                            <div>
+                                <h3>Product Guidance</h3>
+                                <p>
+                                    Get help choosing a purifier based on
+                                    your room and requirements.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="airpure-contact-form-point">
+                            <span class="airpure-contact-form-point-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </span>
+
+                            <div>
+                                <h3>Book a Free Demo</h3>
+                                <p>
+                                    Schedule a product demonstration with
+                                    our AirPure team.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="airpure-contact-form-point">
+                            <span class="airpure-contact-form-point-icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </span>
+
+                            <div>
+                                <h3>Service Support</h3>
+                                <p>
+                                    Ask about filter replacement and
+                                    AMC service support.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Form -->
+                <div class="airpure-contact-form-box">
+
+                    <div class="airpure-contact-form-header">
+                        <h3>Send a Message</h3>
+
+                        <p>
+                            Fill in your details and we'll get back to you.
+                        </p>
+                    </div>
+
+
+                    <form class="airpure-contact-form" id="airpureContactForm">
+
+                        <div class="airpure-contact-form-row">
+
+                            <div class="airpure-form-group">
+                                <label for="contactName">
+                                    Full Name
+                                </label>
+
+                                <input type="text" id="contactName" name="name" placeholder="Enter your name" required>
+                            </div>
+
+
+                            <div class="airpure-form-group">
+                                <label for="contactEmail">
+                                    Email Address
+                                </label>
+
+                                <input type="email" id="contactEmail" name="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+
+                        </div>
+
+
+                        <div class="airpure-contact-form-row">
+
+                            <div class="airpure-form-group">
+                                <label for="contactPhone">
+                                    Phone Number
+                                </label>
+
+                                <input type="tel" id="contactPhone" name="phone" placeholder="Enter your phone number">
+                            </div>
+
+
+                            <div class="airpure-form-group">
+                                <label for="contactSubject">
+                                    Subject
+                                </label>
+
+                                <select id="contactSubject" name="subject" required>
+                                    <option value="" selected disabled>
+                                        Select a subject
+                                    </option>
+
+                                    <option value="product">
+                                        Product Enquiry
+                                    </option>
+
+                                    <option value="demo">
+                                        Book a Product Demo
+                                    </option>
+
+                                    <option value="service">
+                                        AMC / Filter Service
+                                    </option>
+
+                                    <option value="support">
+                                        Customer Support
+                                    </option>
+
+                                    <option value="other">
+                                        Other Enquiry
+                                    </option>
+                                </select>
+                            </div>
+
+                        </div>
+
+
+                        <div class="airpure-form-group">
+                            <label for="contactMessage">
+                                Your Message
+                            </label>
+
+                            <textarea id="contactMessage" name="message" rows="6"
+                                placeholder="Tell us how we can help..." required></textarea>
+                        </div>
+
+
+                        <div class="airpure-contact-form-bottom">
+
+                            <label class="airpure-form-checkbox">
+                                <input type="checkbox" name="consent" required>
+
+                                <span>
+                                    I agree to be contacted regarding
+                                    my enquiry.
+                                </span>
+                            </label>
+
+                            <button type="submit" class="btn-primary">
+                                Send Message
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================
+     STORE LOCATION / MAP
+========================================= -->
+
+    <section class="airpure-store-section">
+        <div class="container">
+
+            <div class="airpure-store-heading">
+                <span class="airpure-section-label">FIND OUR STORE</span>
+
+                <h2>
+                    Visit us and experience
+                    <span>cleaner air.</span>
+                </h2>
+
+                <p>
+                    Visit the AirPure store to explore our air purification
+                    solutions, understand different technologies and get
+                    personalized product guidance.
+                </p>
+            </div>
+
+
+            <div class="airpure-store-wrapper">
+
+                <!-- Map -->
+                <div class="airpure-store-map">
+
+                    <iframe src="https://www.google.com/maps?q=Chennai,Tamil%20Nadu,India&output=embed" width="100%"
+                        height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+
+
+                <!-- Store Details -->
+                <div class="airpure-store-details">
+
+                    <span class="airpure-store-label">
+                        AIRPURE EXPERIENCE STORE
+                    </span>
+
+                    <h3>
+                        Come visit us.
+                    </h3>
+
+                    <p>
+                        Explore our purifier range in person and speak with
+                        our team about the right solution for your space.
+                    </p>
+
+
+                    <div class="airpure-store-detail-list">
+
+                        <!-- Address -->
+                        <div class="airpure-store-detail">
+
+                            <div class="airpure-store-detail-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <span>ADDRESS</span>
+
+                                <p>
+                                    24 Green Avenue,<br>
+                                    Chennai, Tamil Nadu
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Phone -->
+                        <div class="airpure-store-detail">
+
+                            <div class="airpure-store-detail-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+
+                            <div>
+                                <span>PHONE</span>
+
+                                <a href="tel:+919876543210">
+                                    +91 98765 43210
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Hours -->
+                        <div class="airpure-store-detail">
+
+                            <div class="airpure-store-detail-icon">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <span>OPENING HOURS</span>
+
+                                <p>
+                                    Monday – Saturday<br>
+                                    9:00 AM – 6:00 PM
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=24+Green+Avenue+Chennai" target="_blank"
+                        rel="noopener noreferrer" class="btn-primary">
+                        Get Directions
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================
+     AIRPURE FOOTER
+========================================= -->
+
+    <footer class="airpure-footer">
+
+        <div class="container">
+
+            <!-- Footer CTA -->
+            <div class="airpure-footer-cta">
+
+                <div class="airpure-footer-cta-content">
+
+                    <h3>Ready to Breathe Cleaner Air?</h3>
+
+                    <p>
+                        Book a free product demo and find the right
+                        purifier for your space.
+                    </p>
+
+                </div>
+
+                <a href="contact.html#demo-booking" class="airpure-footer-cta-btn">
+
+                    Book a Free Demo
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- Footer Main Columns -->
+            <div class="airpure-footer-main">
+
+                <!-- Brand -->
+                <div class="airpure-footer-brand">
+
+                    <a href="index.html" class="airpure-footer-logo">
+                        <img src="images/logo-light.png" alt="AirPure">
+                    </a>
+
+                    <p>
+                        Cleaner indoor air for healthier and more
+                        comfortable spaces. Discover air purification
+                        solutions designed for every room.
+                    </p>
+
+                    <div class="airpure-social-links">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="airpure-footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+
+                        <li>
+                            <a href="comparison.html">Comparison</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Services -->
+                <div class="airpure-footer-column">
+
+                    <h3>Services</h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="how-it-works.html">
+                                How It Works
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="amc-services.html">
+                                AMC Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                HEPA Purifiers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                Carbon Purifiers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                UV Purifiers
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="airpure-footer-column airpure-footer-contact">
+
+                    <h3>Get In Touch</h3>
+
+                    <ul>
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span>
+                                24 Green Avenue,<br>
+                                Chennai, Tamil Nadu
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+
+                            <a href="tel:+919876543210">
+                                +91 98765 43210
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <a href="mailto:hello@airpure.com">
+                                hello@airpure.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-clock"></i>
+
+                            <span>
+                                Mon – Sat: 9:00 AM – 6:00 PM
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="airpure-footer-bottom">
+
+                <p>
+                    © 2026 AirPure. All Rights Reserved.
+                </p>
+
+                <div class="airpure-footer-bottom-links">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <span></span>
+
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =========================================
+     SCROLL TO TOP
+========================================= -->
+
+    <button class="airpure-scroll-top" id="airpureScrollTop" type="button" aria-label="Scroll to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

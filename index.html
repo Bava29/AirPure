@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>AirPure</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- SEO Description -->
+    <meta name="description"
+        content="AirPure provides advanced air purifiers and indoor air quality solutions for cleaner, healthier spaces.">
+
+    <!-- Google Font - Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================================
+     AIRPURE HEADER
+================================= -->
+    <header class="airpure-header" id="airpureHeader">
+
+        <div class="airpure-header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="airpure-logo">
+                <img src="images/logo.png" alt="AirPure">
+            </a>
+
+
+            <!-- Desktop Navigation -->
+            <nav class="airpure-navigation" id="airpureNavigation">
+
+                <ul class="airpure-menu">
+
+                    <!-- Home Dropdown -->
+                    <li class="airpure-menu-item airpure-home-dropdown">
+                        <a href="#" class="airpure-menu-link">
+                            <span class="airpure-home-text">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="airpure-dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <!-- About -->
+                    <li class="airpure-menu-item">
+                        <a href="about.html" class="airpure-menu-link">
+                            About
+                        </a>
+                    </li>
+
+                    <!-- Products -->
+                    <li class="airpure-menu-item">
+                        <a href="products.html" class="airpure-menu-link">
+                            Products & Comparison
+                        </a>
+                    </li>
+
+                    <!-- How It Works -->
+                    <li class="airpure-menu-item">
+                        <a href="how-it-works.html" class="airpure-menu-link">
+                            How It Works
+                        </a>
+                    </li>
+
+
+                    <!-- AMC Services -->
+                    <li class="airpure-menu-item">
+                        <a href="amc-services.html" class="airpure-menu-link">
+                            AMC Services
+                        </a>
+                    </li>
+
+
+                    <!-- Contact -->
+                    <li class="airpure-menu-item">
+                        <a href="contact.html" class="airpure-menu-link">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Mobile / Tablet Controls -->
+                <div class="airpure-mobile-controls">
+
+                    <!-- Dark Mode -->
+                    <button class="airpure-control-btn" id="airpureThemeToggle" type="button"
+                        aria-label="Toggle dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Dark Mode</span>
+
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button class="airpure-control-btn" id="airpureRtlToggle" type="button"
+                        aria-label="Toggle RTL mode">
+
+                        <i class="fa-solid fa-right-left"></i>
+                        <span>RTL Mode</span>
+
+                    </button>
+
+
+                    <!-- Login -->
+                    <a href="login.html" class="airpure-login-btn">
+                        <i class="fa-regular fa-user"></i>
+                        Login
+                    </a>
+
+
+                    <!-- Book Demo -->
+                    <a href="demo-booking.html" class="airpure-demo-btn">
+
+                        <i class="fa-regular fa-calendar-check"></i>
+                        Book a Demo
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+            <!-- Desktop Controls -->
+            <div class="airpure-desktop-controls">
+
+                <!-- Dark Mode -->
+                <button class="airpure-icon-btn" id="airpureThemeToggleDesktop" type="button"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+                <button class="airpure-icon-btn" id="airpureRtlToggleDesktop" type="button"
+                    aria-label="Toggle RTL mode">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- Login -->
+                <a href="login.html" class="airpure-login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+
+
+                <!-- Book Demo -->
+                <a href="demo-booking.html" class="airpure-demo-btn">
+
+                    <i class="fa-regular fa-calendar-check"></i>
+                    Book a Demo
+
+                </a>
+
+            </div>
+
+
+            <!-- Menu Toggle -->
+            <button class="airpure-menu-toggle" id="airpureMenuToggle" type="button" aria-label="Open menu"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+     AIRPURE HERO SECTION
+========================================= -->
+
+    <section class="airpure-hero-section">
+
+        <!-- Background Overlay -->
+        <div class="airpure-hero-overlay"></div>
+
+        <div class="container">
+
+            <div class="airpure-hero-content">
+
+                <!-- Eyebrow -->
+                <span class="airpure-hero-eyebrow">
+                    <i class="fa-solid fa-wind"></i>
+                    SMARTER INDOOR AIR
+                </span>
+
+
+                <!-- Heading -->
+                <h1>
+                    Breathe Cleaner.
+                    <span>Live Better.</span>
+                </h1>
+
+
+                <!-- Description -->
+                <p>
+                    Create a healthier indoor environment with intelligent
+                    air purification solutions designed for cleaner,
+                    fresher and more comfortable spaces.
+                </p>
+
+
+                <!-- Buttons -->
+                <div class="airpure-hero-actions">
+
+                    <a href="products.html" class="airpure-hero-main-btn">
+
+                        Explore Purifiers
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="comparison.html" class="airpure-hero-light-btn">
+
+                        Find Your Purifier
+                        <i class="fa-solid fa-sliders"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Highlights -->
+            <div class="airpure-hero-highlights">
+
+                <!-- Highlight 01 -->
+                <div class="airpure-hero-highlight">
+
+                    <div class="airpure-highlight-icon">
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+
+                    <div class="airpure-highlight-content">
+
+                        <h3>Advanced Filtration</h3>
+
+                        <p>
+                            HEPA, carbon and UV technologies
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Highlight 02 -->
+                <div class="airpure-hero-highlight">
+
+                    <div class="airpure-highlight-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+
+                    <div class="airpure-highlight-content">
+
+                        <h3>Made for Every Room</h3>
+
+                        <p>
+                            Choose solutions by room size
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Highlight 03 -->
+                <div class="airpure-hero-highlight">
+
+                    <div class="airpure-highlight-icon">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+
+                    <div class="airpure-highlight-content">
+
+                        <h3>Filter Care Support</h3>
+
+                        <p>
+                            Easy AMC and replacement scheduling
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     SECTION 02
+     CLEAN AIR AWARENESS
+========================================= -->
+
+    <section class="airpure-awareness-section">
+
+        <div class="container">
+
+            <div class="airpure-awareness-wrapper">
+
+                <!-- Image Area -->
+                <div class="airpure-awareness-images">
+
+                    <div class="airpure-awareness-main-image">
+
+                        <img src="images/indoor-air-quality.jpg" alt="Clean indoor living space">
+
+                    </div>
+
+
+                    <div class="airpure-awareness-small-image">
+
+                        <img src="images/air-purifier-living-room.jpg" alt="Air purifier in a modern room">
+
+                    </div>
+
+
+                    <div class="airpure-awareness-image-tag">
+
+                        <i class="fa-solid fa-wind"></i>
+
+                        <span>
+                            Cleaner Air
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Content Area -->
+                <div class="airpure-awareness-content">
+
+                    <span class="airpure-section-label">
+                        INDOOR AIR QUALITY
+                    </span>
+
+
+                    <h2>
+                        Cleaner air begins
+                        <span>with better awareness.</span>
+                    </h2>
+
+
+                    <p>
+                        The air inside our homes and workplaces can contain
+                        dust, fine particles, allergens and unwanted odours.
+                        Many of these pollutants are too small to notice,
+                        making indoor air quality easy to overlook.
+                    </p>
+
+
+                    <p>
+                        AirPure helps you understand your space and discover
+                        purification solutions suited to your room, lifestyle
+                        and everyday needs.
+                    </p>
+
+
+                    <!-- Awareness Points -->
+                    <div class="airpure-awareness-points">
+
+                        <div class="airpure-awareness-point">
+
+                            <span class="airpure-point-number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Understand Your Air
+                                </h3>
+
+                                <p>
+                                    Learn what can affect indoor air quality.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="airpure-awareness-point">
+
+                            <span class="airpure-point-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Choose the Right Technology
+                                </h3>
+
+                                <p>
+                                    Explore HEPA, carbon and UV purification.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="airpure-awareness-point">
+
+                            <span class="airpure-point-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Keep Your Filters Healthy
+                                </h3>
+
+                                <p>
+                                    Schedule replacement and AMC services easily.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="how-it-works.html" class="airpure-awareness-button">
+
+                        Discover How It Works
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     SECTION 03
+     AIR PURIFICATION TECHNOLOGIES
+========================================= -->
+
+    <section class="airpure-technology-section">
+
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="airpure-technology-heading">
+
+                <span class="airpure-section-label">
+                    PURIFICATION TECHNOLOGIES
+                </span>
+
+                <h2>
+                    Find the technology that
+                    <span>fits your space.</span>
+                </h2>
+
+                <p>
+                    From everyday dust to unwanted odours, explore
+                    purification technologies designed for different
+                    indoor air quality needs.
+                </p>
+
+            </div>
+
+
+            <!-- Technology Cards -->
+            <div class="airpure-technology-grid">
+
+                <!-- HEPA -->
+                <article class="airpure-technology-card">
+
+                    <div class="airpure-technology-image">
+
+                        <img src="images/hepa-purifier.jpg" alt="HEPA air purifier">
+
+                        <span class="airpure-technology-number">
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <div class="airpure-technology-content">
+
+                        <span class="airpure-technology-type">
+                            PARTICLE FILTRATION
+                        </span>
+
+                        <h3>
+                            HEPA Filtration
+                        </h3>
+
+                        <p>
+                            Designed to capture fine airborne particles
+                            and help create a cleaner indoor environment.
+                        </p>
+
+                        <a href="products.html#hepa" class="btn-secondary">
+
+                            Explore HEPA
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Activated Carbon -->
+                <article class="airpure-technology-card">
+
+                    <div class="airpure-technology-image">
+
+                        <img src="images/carbon-purifier.jpg" alt="Activated carbon air purifier">
+
+                        <span class="airpure-technology-number">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <div class="airpure-technology-content">
+
+                        <span class="airpure-technology-type">
+                            ODOUR & GAS FILTRATION
+                        </span>
+
+                        <h3>
+                            Activated Carbon
+                        </h3>
+
+                        <p>
+                            Helps reduce unwanted odours and certain
+                            gaseous pollutants from indoor spaces.
+                        </p>
+
+                        <a href="products.html#carbon" class="btn-secondary">
+
+                            Explore Carbon
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- UV -->
+                <article class="airpure-technology-card">
+
+                    <div class="airpure-technology-image">
+
+                        <img src="images/uv-purifier.jpg" alt="UV air purification system">
+
+                        <span class="airpure-technology-number">
+                            03
+                        </span>
+
+                    </div>
+
+
+                    <div class="airpure-technology-content">
+
+                        <span class="airpure-technology-type">
+                            UV TECHNOLOGY
+                        </span>
+
+                        <h3>
+                            UV Purification
+                        </h3>
+
+                        <p>
+                            Uses ultraviolet technology as part of an
+                            integrated approach to indoor air purification.
+                        </p>
+
+                        <a href="products.html#uv" class="btn-secondary">
+
+                            Explore UV
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Bottom CTA -->
+            <div class="airpure-technology-bottom">
+
+                <p>
+                    Not sure which technology is right for your room?
+                </p>
+
+                <a href="products.html" class="btn-primary">
+
+                    Compare Purifiers
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     SECTION 04
+     FIND THE RIGHT PURIFIER
+========================================= -->
+
+    <section class="airpure-room-section">
+
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="airpure-room-heading">
+
+                <span class="airpure-section-label">
+                    FIND YOUR FIT
+                </span>
+
+                <h2>
+                    The right purifier starts
+                    <span>with your room.</span>
+                </h2>
+
+                <p>
+                    Room size is one of the key factors when choosing
+                    an air purifier. Explore suitable options based
+                    on the space you want to keep cleaner.
+                </p>
+
+            </div>
+
+
+            <!-- Room Size Options -->
+            <div class="airpure-room-options">
+
+                <!-- Small Room -->
+                <div class="airpure-room-card">
+
+                    <div class="airpure-room-top">
+
+                        <span class="airpure-room-icon">
+                            <i class="fa-solid fa-bed"></i>
+                        </span>
+
+                        <span class="airpure-room-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Small Rooms
+                    </h3>
+
+                    <p>
+                        Bedrooms, study rooms and personal spaces.
+                    </p>
+
+                    <div class="airpure-room-size">
+                        <strong>Up to 200</strong>
+                        <span>sq. ft.</span>
+                    </div>
+
+                    <a href="products.html" class="btn-secondary">
+
+                        View Options
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Medium Room -->
+                <div class="airpure-room-card">
+
+                    <div class="airpure-room-top">
+
+                        <span class="airpure-room-icon">
+                            <i class="fa-solid fa-couch"></i>
+                        </span>
+
+                        <span class="airpure-room-number">
+                            02
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Medium Rooms
+                    </h3>
+
+                    <p>
+                        Living rooms, larger bedrooms and everyday spaces.
+                    </p>
+
+                    <div class="airpure-room-size">
+                        <strong>200–400</strong>
+                        <span>sq. ft.</span>
+                    </div>
+
+                    <a href="products.html" class="btn-secondary">
+
+                        View Options
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Large Room -->
+                <div class="airpure-room-card">
+
+                    <div class="airpure-room-top">
+
+                        <span class="airpure-room-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+
+                        <span class="airpure-room-number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Large Rooms
+                    </h3>
+
+                    <p>
+                        Open living areas, offices and spacious interiors.
+                    </p>
+
+                    <div class="airpure-room-size">
+                        <strong>400–700</strong>
+                        <span>sq. ft.</span>
+                    </div>
+
+                    <a href="products.html" class="btn-secondary">
+
+                        View Options
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Extra Large -->
+                <div class="airpure-room-card">
+
+                    <div class="airpure-room-top">
+
+                        <span class="airpure-room-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </span>
+
+                        <span class="airpure-room-number">
+                            04
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Large Open Spaces
+                    </h3>
+
+                    <p>
+                        Bigger offices, halls and connected indoor spaces.
+                    </p>
+
+                    <div class="airpure-room-size">
+                        <strong>700+</strong>
+                        <span>sq. ft.</span>
+                    </div>
+
+                    <a href="products.html" class="btn-secondary">
+
+                        View Options
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Comparison Link -->
+            <div class="airpure-room-footer">
+
+                <div class="airpure-room-footer-text">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <span>
+                        Need help comparing different purifier models?
+                    </span>
+
+                </div>
+
+                <a href="products.html" class="btn-primary">
+
+                    Open Comparison Tool
+
+                    <i class="fa-solid fa-sliders"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     SECTION 05
+     FILTER CARE & AMC SERVICES
+========================================= -->
+
+    <section class="airpure-amc-section">
+
+        <div class="container">
+
+            <div class="airpure-amc-wrapper">
+
+                <!-- Background Image -->
+                <div class="airpure-amc-image">
+
+                    <img src="images/filter-maintenance.jpg" alt="Air purifier filter maintenance">
+
+                    <div class="airpure-amc-overlay"></div>
+
+
+                    <!-- Image Content -->
+                    <div class="airpure-amc-image-content">
+
+                        <span>
+                            AIRPURE CARE
+                        </span>
+
+                        <h2>
+                            Keep your purifier
+                            performing at its best.
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Service Content -->
+                <div class="airpure-amc-content">
+
+                    <span class="airpure-section-label">
+                        AMC & FILTER CARE
+                    </span>
+
+                    <h2>
+                        Cleaner air needs
+                        <span>consistent care.</span>
+                    </h2>
+
+                    <p>
+                        Regular filter care helps your air purifier
+                        continue working effectively. AirPure makes
+                        filter replacement and maintenance easier to
+                        schedule when your purifier needs attention.
+                    </p>
+
+
+                    <!-- Service Features -->
+
+                    <div class="airpure-amc-features">
+
+                        <div class="airpure-amc-feature">
+
+                            <div class="airpure-amc-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Replacement Scheduling
+                                </h3>
+
+                                <p>
+                                    Schedule your filter replacement
+                                    at a convenient time.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="airpure-amc-feature">
+
+                            <div class="airpure-amc-icon">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Maintenance Support
+                                </h3>
+
+                                <p>
+                                    Keep your purifier maintained
+                                    with convenient service support.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="airpure-amc-feature">
+
+                            <div class="airpure-amc-icon">
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Timely Filter Care
+                                </h3>
+
+                                <p>
+                                    Stay aware of when your purifier
+                                    needs its next filter change.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="amc-services.html" class="btn-primary">
+
+                        Explore AMC Services
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- How Air Purifiers Work Section -->
+    <section class="airpure-process-section">
+        <div class="container">
+
+            <div class="airpure-process-heading">
+                <span class="airpure-section-label">HOW AIR PURIFIERS WORK</span>
+
+                <h2>
+                    Clean air through a
+                    <span>simple purification process.</span>
+                </h2>
+
+                <p>
+                    Air purifiers continuously move indoor air through different
+                    purification stages to help capture particles, reduce unwanted
+                    odours and improve the overall indoor air environment.
+                </p>
+            </div>
+
+            <div class="airpure-process-image">
+                <img src="images/how-air-purifier-works.jpg" alt="How an air purifier works">
+
+                <div class="airpure-process-image-label">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>Cleaner Air, Step by Step</span>
+                </div>
+            </div>
+
+            <div class="airpure-process-steps">
+
+                <!-- Step 01 -->
+                <div class="airpure-process-step">
+                    <div class="airpure-process-number">01</div>
+
+                    <div class="airpure-process-icon">
+                        <i class="fa-solid fa-arrow-down-wide-short"></i>
+                    </div>
+
+                    <h3>Draw In Air</h3>
+
+                    <p>
+                        Indoor air is pulled through into the purifier through its
+                        air intake system.
+                    </p>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="airpure-process-step">
+                    <div class="airpure-process-number">02</div>
+
+                    <div class="airpure-process-icon">
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+
+                    <h3>Capture Particles</h3>
+
+                    <p>
+                        Filtration stages help capture dust and fine airborne
+                        particles from the incoming air.
+                    </p>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="airpure-process-step">
+                    <div class="airpure-process-number">03</div>
+
+                    <div class="airpure-process-icon">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+
+                    <h3>Reduce Odours</h3>
+
+                    <p>
+                        Activated carbon filtration can help reduce unwanted
+                        household odours from indoor air.
+                    </p>
+                </div>
+
+                <!-- Step 04 -->
+                <div class="airpure-process-step">
+                    <div class="airpure-process-number">04</div>
+
+                    <div class="airpure-process-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <h3>Release Clean Air</h3>
+
+                    <p>
+                        The purified air is circulated back into the room,
+                        for a fresh indoor environment.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="airpure-process-bottom">
+                <div class="airpure-process-bottom-content">
+                    <span>WANT TO KNOW MORE?</span>
+                    <h3>Understand the technology behind cleaner indoor air.</h3>
+                </div>
+
+                <a href="how-it-works.html" class="btn-primary">
+                    Explore How It Works
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="airpure-products-section">
+        <div class="container">
+
+            <div class="airpure-products-heading">
+                <span class="airpure-section-label">FEATURED PRODUCTS</span>
+
+                <h2>
+                    Purification solutions for
+                    <span>every kind of space.</span>
+                </h2>
+
+                <p>
+                    Explore AirPure purifiers designed for bedrooms, living spaces,
+                    work areas and larger indoor environments.
+                </p>
+            </div>
+
+            <div class="airpure-products-grid">
+
+                <!-- Product 01 -->
+                <article class="airpure-product-card">
+
+                    <div class="airpure-product-image">
+                        <img src="images/bedroom-air-purifier.jpg" alt="Air purifier for bedroom">
+
+                        <span class="airpure-product-tag">
+                            BEDROOM
+                        </span>
+                    </div>
+
+                    <div class="airpure-product-content">
+
+                        <span class="airpure-product-type">
+                            COMPACT PURIFIER
+                        </span>
+
+                        <h3>AirPure Mini</h3>
+
+                        <p>
+                            A compact purification solution designed for
+                            bedrooms and smaller personal spaces.
+                        </p>
+
+                        <div class="airpure-product-meta">
+                            <span>
+                                <i class="fa-solid fa-ruler-combined"></i>
+                                Up to 200 sq ft
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-filter"></i>
+                                HEPA
+                            </span>
+                        </div>
+
+                        <a href="products.html" class="btn-secondary">
+                            View Product
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- Product 02 -->
+                <article class="airpure-product-card">
+
+                    <div class="airpure-product-image">
+                        <img src="images/living-room-air-purifier.jpg" alt="Air purifier for living room">
+
+                        <span class="airpure-product-tag">
+                            LIVING ROOM
+                        </span>
+                    </div>
+
+                    <div class="airpure-product-content">
+
+                        <span class="airpure-product-type">
+                            SMART PURIFIER
+                        </span>
+
+                        <h3>AirPure Pro</h3>
+
+                        <p>
+                            A smart purification solution created for everyday
+                            living and medium-sized rooms.
+                        </p>
+
+                        <div class="airpure-product-meta">
+                            <span>
+                                <i class="fa-solid fa-ruler-combined"></i>
+                                Up to 400 sq ft
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-filter"></i>
+                                HEPA + Carbon
+                            </span>
+                        </div>
+
+                        <a href="products.html" class="btn-secondary">
+                            View Product
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- Product 03 -->
+                <article class="airpure-product-card">
+
+                    <div class="airpure-product-image">
+                        <img src="images/large-room-air-purifier.jpg" alt="Air purifier for large room">
+
+                        <span class="airpure-product-tag">
+                            LARGE SPACE
+                        </span>
+                    </div>
+
+                    <div class="airpure-product-content">
+
+                        <span class="airpure-product-type">
+                            ADVANCED PURIFIER
+                        </span>
+
+                        <h3>AirPure Max</h3>
+
+                        <p>
+                            Built for larger indoor areas where higher air
+                            circulation and multi-stage filtration are needed.
+                        </p>
+
+                        <div class="airpure-product-meta">
+                            <span>
+                                <i class="fa-solid fa-ruler-combined"></i>
+                                700+ sq ft
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-filter"></i>
+                                Multi-Stage
+                            </span>
+                        </div>
+
+                        <a href="products.html" class="btn-secondary">
+                            View Product
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </article>
+
+            </div>
+
+
+            <div class="airpure-products-bottom">
+                <p>
+                    Looking for a purifier based on your room size?
+                </p>
+
+                <a href="products.html" class="btn-primary">
+                    View All Products
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Free Product Demo CTA Section -->
+    <section class="airpure-demo-section">
+        <div class="airpure-demo-background">
+            <img src="images/air-demo.jpg" alt="Air purifier product demonstration">
+        </div>
+
+        <div class="airpure-demo-overlay"></div>
+
+        <div class="container">
+            <div class="airpure-demo-content">
+
+                <span class="airpure-section-label">
+                    FREE PRODUCT DEMO
+                </span>
+
+                <h2>
+                    Not sure which purifier
+                    <span>is right for you?</span>
+                </h2>
+
+                <p>
+                    Book a free product demo and explore the right air
+                    purification solution for your room, lifestyle and
+                    indoor air quality needs.
+                </p>
+
+                <div class="airpure-demo-features">
+
+                    <div class="airpure-demo-feature">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Room Assessment</span>
+                    </div>
+
+                    <div class="airpure-demo-feature">
+                        <i class="fa-solid fa-filter"></i>
+                        <span>Product Guidance</span>
+                    </div>
+
+                    <div class="airpure-demo-feature">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Free Consultation</span>
+                    </div>
+
+                </div>
+
+                <div class="airpure-demo-actions">
+
+                    <a href="book-demo.html" class="btn-primary">
+                        Book a Free Demo
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact.html" class="btn-secondary">
+                        Contact Us
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+     AIRPURE FOOTER
+========================================= -->
+
+    <footer class="airpure-footer">
+
+        <div class="container">
+
+            <!-- Footer CTA -->
+            <div class="airpure-footer-cta">
+
+                <div class="airpure-footer-cta-content">
+
+                    <h3>Ready to Breathe Cleaner Air?</h3>
+
+                    <p>
+                        Book a free product demo and find the right
+                        purifier for your space.
+                    </p>
+
+                </div>
+
+                <a href="contact.html#demo-booking" class="airpure-footer-cta-btn">
+
+                    Book a Free Demo
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- Footer Main Columns -->
+            <div class="airpure-footer-main">
+
+                <!-- Brand -->
+                <div class="airpure-footer-brand">
+
+                    <a href="index.html" class="airpure-footer-logo">
+                        <img src="images/logo-light.png" alt="AirPure">
+                    </a>
+
+                    <p>
+                        Cleaner indoor air for healthier and more
+                        comfortable spaces. Discover air purification
+                        solutions designed for every room.
+                    </p>
+
+                    <div class="airpure-social-links">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="airpure-footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+
+                        <li>
+                            <a href="comparison.html">Comparison</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Services -->
+                <div class="airpure-footer-column">
+
+                    <h3>Services</h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="how-it-works.html">
+                                How It Works
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="amc-services.html">
+                                AMC Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                HEPA Purifiers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                Carbon Purifiers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                UV Purifiers
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="airpure-footer-column airpure-footer-contact">
+
+                    <h3>Get In Touch</h3>
+
+                    <ul>
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span>
+                                24 Green Avenue,<br>
+                                Chennai, Tamil Nadu
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+
+                            <a href="tel:+919876543210">
+                                +91 98765 43210
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <a href="mailto:hello@airpure.com">
+                                hello@airpure.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-clock"></i>
+
+                            <span>
+                                Mon – Sat: 9:00 AM – 6:00 PM
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="airpure-footer-bottom">
+
+                <p>
+                    © 2026 AirPure. All Rights Reserved.
+                </p>
+
+                <div class="airpure-footer-bottom-links">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <span></span>
+
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =========================================
+     SCROLL TO TOP
+========================================= -->
+
+    <button class="airpure-scroll-top" id="airpureScrollTop" type="button" aria-label="Scroll to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

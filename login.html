@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>AirPure</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- SEO Description -->
+    <meta name="description"
+        content="AirPure provides advanced air purifiers and indoor air quality solutions for cleaner, healthier spaces.">
+
+    <!-- Google Font - Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="airpure-auth-page">
+
+    <!-- Top Controls -->
+    <div class="airpure-auth-controls">
+
+        <!-- Dark Mode -->
+        <button class="airpure-auth-control" id="airpureThemeToggle" type="button" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- RTL -->
+        <button class="airpure-auth-control" id="airpureRtlToggle" type="button" aria-label="Toggle RTL mode">
+            <i class="fa-solid fa-right-left"></i>
+        </button>
+
+    </div>
+
+
+    <!-- Login Section -->
+    <main class="airpure-auth-wrapper">
+
+        <div class="airpure-login-card">
+
+            <!-- Logo -->
+            <a href="index.html" class="airpure-auth-logo">
+                <img src="images/logo.png" alt="AirPure">
+            </a>
+
+            <!-- Heading -->
+            <div class="airpure-auth-heading">
+                <h1>Login to <strong>AirPure</strong></h1>
+                <p>Sign in to manage your AirPure account.</p>
+            </div>
+
+
+            <!-- Login Form -->
+            <form class="airpure-login-form">
+
+                <!-- Email -->
+                <div class="airpure-form-group">
+                    <label for="loginEmail">Email Address</label>
+
+                    <div class="airpure-input-wrapper">
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input type="email" id="loginEmail" name="email" placeholder="Enter your email address"
+                            required>
+                    </div>
+                </div>
+
+
+                <!-- Password -->
+                <div class="airpure-form-group">
+                    <label for="loginPassword">Password</label>
+
+                    <div class="airpure-input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter your password"
+                            required>
+
+                        <button type="button" class="airpure-password-toggle" id="airpurePasswordToggle"
+                            aria-label="Show password">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Remember / Forgot -->
+                <div class="airpure-login-options">
+
+                    <label class="airpure-remember">
+                        <input type="checkbox" id="rememberMe">
+                        <span class="airpure-checkmark"></span>
+                        <span>Remember me</span>
+                    </label>
+
+                    <a href="#" class="airpure-forgot-link">
+                        Forgot password?
+                    </a>
+
+                </div>
+
+
+                <!-- Login Button -->
+                <button type="submit" class="btn-primary airpure-login-button">
+                    Login
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+
+            <!-- Divider -->
+            <div class="airpure-auth-divider">
+                <span>Or Continue With</span>
+            </div>
+
+
+            <!-- Social Login -->
+            <div class="airpure-social-login">
+
+                <!-- Google -->
+                <button type="button" class="airpure-social-button airpure-google" aria-label="Continue with Google">
+                    <img src="images/google-logo.svg" alt="Google">
+                </button>
+
+                <!-- Facebook -->
+                <button type="button" class="airpure-social-button airpure-facebook"
+                    aria-label="Continue with Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </button>
+
+                <!-- Apple -->
+                <button type="button" class="airpure-social-button airpure-apple" aria-label="Continue with Apple">
+                    <i class="fa-brands fa-apple"></i>
+                </button>
+
+            </div>
+
+
+            <!-- Register Link -->
+            <div class="airpure-auth-register">
+                <p>
+                    Don't have an account?
+                    <a href="register.html">Create an account</a>
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script>
+        const themeToggle = document.getElementById("airpureThemeToggle");
+
+        function updateThemeIcon() {
+            const icon = themeToggle.querySelector("i");
+
+            if (!icon) return;
+
+            const isDark =
+                document.documentElement.classList.contains("airpure-dark-mode");
+
+            if (isDark) {
+                icon.classList.remove("fa-moon");
+                icon.classList.add("fa-sun");
+            } else {
+                icon.classList.remove("fa-sun");
+                icon.classList.add("fa-moon");
+            }
+        }
+
+        const savedTheme = localStorage.getItem("airpure-theme");
+
+        document.documentElement.classList.remove("dark-mode");
+        document.documentElement.classList.toggle("airpure-dark-mode", savedTheme === "dark");
+        updateThemeIcon();
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.documentElement.classList.remove("dark-mode");
+            updateThemeIcon();
+        }, { once: true });
+
+        themeToggle.addEventListener("click", function (event) {
+            event.stopImmediatePropagation();
+
+            const isDark =
+                document.documentElement.classList.toggle("airpure-dark-mode");
+
+            localStorage.setItem("airpure-theme", isDark ? "dark" : "light");
+            document.documentElement.classList.remove("dark-mode");
+            updateThemeIcon();
+        }, true);
+    </script>
+
+</body>
+
+</html>
