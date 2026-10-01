@@ -12827,6 +12827,17 @@ html.airpure-dark-mode .airpure-products-tech-tab {
     color: var(--text-color);
 }
 
+html.airpure-dark-mode .airpure-products-tech-tab i {
+    color: #FFFFFF !important;
+}
+
+html.airpure-dark-mode .airpure-products-tech-tab:hover,
+html.airpure-dark-mode .airpure-products-tech-tab.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
 
 /* Product Showcase */
 html.airpure-dark-mode .airpure-products-showcase-section {
@@ -13301,6 +13312,11 @@ html.airpure-dark-mode .airpure-hero-main-btn i,
 html.airpure-dark-mode .airpure-hero-light-btn,
 html.airpure-dark-mode .airpure-hero-light-btn i {
     color: #FFFFFF !important;
+}
+
+html.airpure-dark-mode .airpure-hero-light-btn:hover,
+html.airpure-dark-mode .airpure-hero-light-btn:hover i {
+    color: var(--primary-color) !important;
 }
 
 /****************************************************Rtl mode*********************************************************************************/
@@ -22305,4 +22321,302 @@ html[dir="rtl"] .airpure-auth-controls {
         margin: 0 auto !important;
     }
 
+}
+
+/* =========================================================
+   DARK MODE ONLY - DATE ICON RIGHT ALIGN OVERRIDE
+   ========================================================= */
+
+html.airpure-dark-mode input[type="date"],
+html.dark-mode input[type="date"] {
+    text-align: left !important;
+    direction: ltr !important;
+}
+
+/* Native calendar icon - force to right */
+html.airpure-dark-mode input[type="date"]::-webkit-calendar-picker-indicator,
+html.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute !important;
+    right: 18px !important;
+    left: auto !important;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+/* Date input wrapper must allow absolute positioning */
+html.airpure-dark-mode .airpure-date-field,
+html.dark-mode .airpure-date-field {
+    position: relative !important;
+}
+
+/* =========================================
+   DARK MODE - LOGIN BUTTON HOVER ICON
+   ========================================= */
+
+html.airpure-dark-mode .airpure-login-btn:hover i,
+html.dark-mode .airpure-login-btn:hover i,
+html.airpure-dark-mode .airpure-login-btn:hover svg,
+html.dark-mode .airpure-login-btn:hover svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    stroke: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Login button hover text */
+html.airpure-dark-mode .airpure-login-btn:hover,
+html.dark-mode .airpure-login-btn:hover {
+    color: #ffffff !important;
+}
+
+/* If icon is Font Awesome */
+html.airpure-dark-mode .airpure-login-btn:hover .fa,
+html.airpure-dark-mode .airpure-login-btn:hover .fas,
+html.airpure-dark-mode .airpure-login-btn:hover .far,
+html.dark-mode .airpure-login-btn:hover .fa,
+html.dark-mode .airpure-login-btn:hover .fas,
+html.dark-mode .airpure-login-btn:hover .far {
+    color: #ffffff !important;
+}
+
+/* Move centered logo slightly upward */
+.airpure-logo {
+    transform: translateY(-8px);
+}
+
+/* =========================================================
+   AIRPURE DEMO BOOKING - PROPER RTL OVERRIDE
+   ========================================================= */
+
+html[dir="rtl"] .airpure-demo-card,
+html[dir="rtl"] .airpure-demo-form-area,
+html[dir="rtl"] .airpure-demo-info {
+    direction: rtl;
+}
+
+/* Main form text alignment */
+html[dir="rtl"] .airpure-demo-form,
+html[dir="rtl"] .airpure-demo-form-heading,
+html[dir="rtl"] .airpure-demo-field {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Labels */
+html[dir="rtl"] .airpure-demo-field label {
+    text-align: right;
+}
+
+/* Input wrapper */
+html[dir="rtl"] .airpure-demo-input {
+    direction: rtl;
+    position: relative;
+}
+
+/* Input / Select text */
+html[dir="rtl"] .airpure-demo-input input,
+html[dir="rtl"] .airpure-demo-input select {
+    direction: rtl;
+    text-align: right;
+    padding-left: 42px !important;
+    padding-right: 42px !important;
+}
+
+/* Left-side field icon */
+html[dir="rtl"] .airpure-demo-input>i:first-child {
+    left: auto !important;
+    right: 16px !important;
+}
+
+/* Select arrow */
+html[dir="rtl"] .airpure-demo-select-icon {
+    right: auto !important;
+    left: 16px !important;
+}
+
+/* Date input */
+html[dir="rtl"] .airpure-demo-input input[type="date"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Browser date/calendar indicator */
+html[dir="rtl"] .airpure-demo-input input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 16px;
+    right: auto;
+    cursor: pointer;
+}
+
+/* Two-column date/time row */
+html[dir="rtl"] .airpure-demo-row {
+    direction: rtl;
+}
+
+/* Textarea */
+html[dir="rtl"] .airpure-demo-textarea {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .airpure-demo-textarea>i {
+    left: auto !important;
+    right: 16px !important;
+}
+
+html[dir="rtl"] .airpure-demo-textarea textarea {
+    direction: rtl;
+    text-align: right;
+    padding-left: 16px !important;
+    padding-right: 42px !important;
+}
+
+/* Submit button */
+html[dir="rtl"] .airpure-demo-submit {
+    direction: rtl;
+}
+
+/* Info section */
+html[dir="rtl"] .airpure-demo-info {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .airpure-demo-info-top,
+html[dir="rtl"] .airpure-demo-benefit {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Benefit icon + content */
+html[dir="rtl"] .airpure-demo-benefit {
+    flex-direction: row;
+}
+
+/* Mobile RTL */
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .airpure-demo-row {
+        direction: rtl;
+    }
+
+    html[dir="rtl"] .airpure-demo-input>i:first-child {
+        right: 14px !important;
+        left: auto !important;
+    }
+
+    html[dir="rtl"] .airpure-demo-select-icon {
+        left: 14px !important;
+        right: auto !important;
+    }
+
+    html[dir="rtl"] .airpure-demo-input input,
+    html[dir="rtl"] .airpure-demo-input select {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+}
+
+/* =====================================================
+   RTL DATE FIELD - STRONG OVERRIDE
+   ===================================================== */
+
+html[dir="rtl"] .airpure-demo-input:has(input[type="date"]) {
+    direction: rtl !important;
+    position: relative !important;
+}
+
+/* Date text */
+html[dir="rtl"] .airpure-demo-input input[type="date"] {
+    direction: rtl !important;
+    text-align: right !important;
+
+    padding-left: 55px !important;
+    padding-right: 20px !important;
+
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Calendar icon -> LEFT */
+html[dir="rtl"] .airpure-demo-input input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute !important;
+
+    left: 20px !important;
+    right: auto !important;
+
+    width: 18px !important;
+    height: 18px !important;
+
+    margin: 0 !important;
+    cursor: pointer !important;
+}
+
+/* If wrapper contains another calendar icon */
+html[dir="rtl"] .airpure-demo-input:has(input[type="date"])>i,
+html[dir="rtl"] .airpure-demo-input:has(input[type="date"]) .fa-calendar,
+html[dir="rtl"] .airpure-demo-input:has(input[type="date"]) .fa-calendar-days {
+    left: 20px !important;
+    right: auto !important;
+}
+
+/* Date placeholder/value */
+html[dir="rtl"] .airpure-demo-input input[type="date"] {
+    color: inherit !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .airpure-demo-input input[type="date"] {
+        padding-left: 50px !important;
+        padding-right: 18px !important;
+    }
+
+    html[dir="rtl"] .airpure-demo-input input[type="date"]::-webkit-calendar-picker-indicator {
+        left: 16px !important;
+        right: auto !important;
+    }
+}
+
+/* =========================================
+   RTL DATE FIELD - FIX CALENDAR ICON
+   ========================================= */
+
+html[dir="rtl"] input[type="date"] {
+    direction: rtl !important;
+    text-align: right !important;
+    padding-left: 55px !important;
+    padding-right: 20px !important;
+}
+
+/* Hide browser's native calendar icon */
+html[dir="rtl"] input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0 !important;
+    position: absolute !important;
+    left: 0 !important;
+    width: 45px !important;
+    height: 100% !important;
+    cursor: pointer !important;
+}
+
+/* Date field wrapper */
+html[dir="rtl"] .airpure-date-field,
+html[dir="rtl"] .date-input-wrapper {
+    position: relative !important;
+}
+
+/* Custom calendar icon → LEFT */
+html[dir="rtl"] .airpure-date-field>i,
+html[dir="rtl"] .date-input-wrapper>i,
+html[dir="rtl"] .airpure-date-field .fa-calendar,
+html[dir="rtl"] .date-input-wrapper .fa-calendar {
+    position: absolute !important;
+    left: 20px !important;
+    right: auto !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 5 !important;
+    pointer-events: none !important;
 }
