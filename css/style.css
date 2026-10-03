@@ -22620,3 +22620,193 @@ html[dir="rtl"] .date-input-wrapper .fa-calendar {
     z-index: 5 !important;
     pointer-events: none !important;
 }
+
+/* =========================================================
+   HOME 2 - REDUCE LEFT CONTENT TO IMAGE SPACE
+========================================================= */
+
+@media (min-width: 993px) {
+
+    .airpure-home2-air-left {
+        transform: translateX(100px) !important;
+        position: relative;
+        z-index: 2;
+    }
+
+    .airpure-home2-air-visual {
+        position: relative;
+        z-index: 3;
+    }
+
+}
+
+/* =========================================================
+   ABOUT MISSION CARDS - REDUCE EMPTY SPACE
+   ========================================================= */
+
+.airpure-about-mission-card {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 28px !important;
+}
+
+.airpure-about-mission-icon {
+    margin-bottom: 40px !important;
+}
+
+.airpure-about-mission-card h3 {
+    margin-bottom: 10px !important;
+}
+
+.airpure-about-mission-card p {
+    line-height: 1.6 !important;
+}
+
+/* Keep bottom line in correct position */
+.airpure-about-mission-line {
+    bottom: 0 !important;
+}
+
+/* HOW IT WORKS — pair the existing care steps with a purifier visual */
+.airpure-how-care-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+    align-items: stretch;
+    gap: 42px;
+}
+
+.airpure-how-care-visual {
+    position: relative;
+    min-height: 465px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    isolation: isolate;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background: radial-gradient(ellipse at 52% 50%, #fff 0%, #f5faf8 58%, #edf5f2 100%);
+}
+
+.airpure-how-care-visual::before {
+    position: absolute;
+    z-index: -1;
+    width: 68%;
+    aspect-ratio: 1;
+    content: "";
+    border: 1px solid rgba(25, 111, 99, 0.11);
+    border-radius: 50%;
+    box-shadow: 0 0 0 28px rgba(25, 111, 99, 0.035), 0 0 0 58px rgba(25, 111, 99, 0.025);
+}
+
+.airpure-how-care-visual img {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.airpure-how-care-visual::after {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    content: "";
+    background: linear-gradient(135deg, rgba(237, 247, 244, 0.18), transparent 55%, rgba(15, 70, 65, 0.08));
+    pointer-events: none;
+}
+
+.airpure-how-care-airflow {
+    position: absolute;
+    z-index: 2;
+    inset: 15% 9%;
+    border-top: 1px solid rgba(25, 111, 99, 0.28);
+    border-bottom: 1px solid rgba(25, 111, 99, 0.22);
+    border-radius: 50%;
+    transform: rotate(-18deg);
+}
+
+.airpure-how-care-airflow::before,
+.airpure-how-care-airflow::after {
+    position: absolute;
+    left: -3%;
+    right: -3%;
+    height: 1px;
+    content: "";
+    background: linear-gradient(90deg, transparent, rgba(25, 111, 99, 0.24), transparent);
+}
+
+.airpure-how-care-airflow::before { top: 35%; }
+.airpure-how-care-airflow::after { top: 66%; }
+
+.airpure-how-care-badge {
+    position: absolute;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 14px;
+    color: var(--black-color);
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(25, 111, 99, 0.14);
+    border-radius: 999px;
+    box-shadow: 0 10px 30px rgba(15, 70, 65, 0.1);
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.airpure-how-care-badge i {
+    color: var(--primary-color);
+    font-size: 12px;
+}
+
+.airpure-how-care-badge-hepa { top: 16%; left: 7%; }
+.airpure-how-care-badge-carbon { top: 42%; right: 5%; }
+.airpure-how-care-badge-uv { bottom: 15%; left: 12%; }
+
+@media (max-width: 992px) {
+    .airpure-how-care-layout {
+        grid-template-columns: 1fr 0.9fr;
+        gap: 24px;
+    }
+
+    .airpure-how-care-visual { min-height: 420px; }
+}
+
+@media (max-width: 768px) {
+    .airpure-how-care-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .airpure-how-care-visual { min-height: 390px; }
+}
+
+@media (max-width: 576px) {
+    .airpure-how-care-visual { min-height: 330px; }
+    .airpure-how-care-badge { gap: 7px; padding: 9px 11px; font-size: 10px; }
+    .airpure-how-care-badge-hepa { top: 12%; left: 4%; }
+    .airpure-how-care-badge-carbon { right: 3%; }
+    .airpure-how-care-badge-uv { bottom: 11%; left: 6%; }
+}
+
+/* AMC filter guide cards: rectangular photo thumbnails in place of icons */
+.airpure-filter-guide-card .airpure-filter-guide-icon {
+    width: 128px;
+    height: 78px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--secondary-color);
+}
+
+.airpure-filter-guide-card .airpure-filter-guide-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
