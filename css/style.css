@@ -608,8 +608,8 @@ body {
 
     padding: 9px 20px;
 
-    color: var(--primary-color);
-    background-color: transparent;
+    color: var(--white-color);
+    background-color: var(--primary-color);
 
     border: 1px solid var(--primary-color);
     border-radius: 999px;
@@ -624,8 +624,9 @@ body {
 
 .airpure-login-btn:hover {
     color: var(--white-color);
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background-color: #0B5F59;
+    border-color: #0B5F59;
+    transform: translateY(-1px);
 }
 
 
@@ -643,8 +644,8 @@ body {
 
     padding: 9px 20px;
 
-    color: var(--white-color);
-    background-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
 
     border: 1px solid var(--primary-color);
     border-radius: 999px;
@@ -662,6 +663,21 @@ body {
     background-color: #0B5F59;
     border-color: #0B5F59;
     transform: translateY(-1px);
+}
+
+/* Keep CTA icons aligned consistently across themes and hover states. */
+.airpure-demo-btn i,
+.airpure-amc-final-actions .btn-primary i,
+.airpure-demo-submit i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 1em;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-align: center;
+    transform: none;
 }
 
 
@@ -13280,12 +13296,14 @@ html.airpure-dark-mode .airpure-home-dropdown.active-parent>.airpure-menu-link .
 html.airpure-dark-mode .airpure-login-btn {
     color: #FFFFFF !important;
     border-color: var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 /* Login hover */
 html.airpure-dark-mode .airpure-login-btn:hover {
     color: #FFFFFF !important;
-    background-color: var(--primary-color);
+    background-color: #0B5F59;
+    border-color: #0B5F59;
 }
 
 /* Header icon buttons */
@@ -22343,6 +22361,21 @@ html.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
 
+/* Keep native date controls at the same right edge in both themes. */
+.airpure-amc-input:has(input[type="date"]),
+.airpure-demo-input:has(input[type="date"]) {
+    position: relative;
+}
+
+.airpure-amc-input input[type="date"]::-webkit-calendar-picker-indicator,
+.airpure-demo-input input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute !important;
+    inset-inline-end: 16px !important;
+    inset-inline-start: auto !important;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
 /* Date input wrapper must allow absolute positioning */
 html.airpure-dark-mode .airpure-date-field,
 html.dark-mode .airpure-date-field {
@@ -22378,11 +22411,6 @@ html.dark-mode .airpure-login-btn:hover .fa,
 html.dark-mode .airpure-login-btn:hover .fas,
 html.dark-mode .airpure-login-btn:hover .far {
     color: #ffffff !important;
-}
-
-/* Move centered logo slightly upward */
-.airpure-logo {
-    transform: translateY(-8px);
 }
 
 /* =========================================================
@@ -22738,8 +22766,13 @@ html[dir="rtl"] .date-input-wrapper .fa-calendar {
     background: linear-gradient(90deg, transparent, rgba(25, 111, 99, 0.24), transparent);
 }
 
-.airpure-how-care-airflow::before { top: 35%; }
-.airpure-how-care-airflow::after { top: 66%; }
+.airpure-how-care-airflow::before {
+    top: 35%;
+}
+
+.airpure-how-care-airflow::after {
+    top: 66%;
+}
 
 .airpure-how-care-badge {
     position: absolute;
@@ -22763,9 +22796,20 @@ html[dir="rtl"] .date-input-wrapper .fa-calendar {
     font-size: 12px;
 }
 
-.airpure-how-care-badge-hepa { top: 16%; left: 7%; }
-.airpure-how-care-badge-carbon { top: 42%; right: 5%; }
-.airpure-how-care-badge-uv { bottom: 15%; left: 12%; }
+.airpure-how-care-badge-hepa {
+    top: 16%;
+    left: 7%;
+}
+
+.airpure-how-care-badge-carbon {
+    top: 42%;
+    right: 5%;
+}
+
+.airpure-how-care-badge-uv {
+    bottom: 15%;
+    left: 12%;
+}
 
 @media (max-width: 992px) {
     .airpure-how-care-layout {
@@ -22773,7 +22817,9 @@ html[dir="rtl"] .date-input-wrapper .fa-calendar {
         gap: 24px;
     }
 
-    .airpure-how-care-visual { min-height: 420px; }
+    .airpure-how-care-visual {
+        min-height: 420px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -22782,15 +22828,35 @@ html[dir="rtl"] .date-input-wrapper .fa-calendar {
         gap: 28px;
     }
 
-    .airpure-how-care-visual { min-height: 390px; }
+    .airpure-how-care-visual {
+        min-height: 390px;
+    }
 }
 
 @media (max-width: 576px) {
-    .airpure-how-care-visual { min-height: 330px; }
-    .airpure-how-care-badge { gap: 7px; padding: 9px 11px; font-size: 10px; }
-    .airpure-how-care-badge-hepa { top: 12%; left: 4%; }
-    .airpure-how-care-badge-carbon { right: 3%; }
-    .airpure-how-care-badge-uv { bottom: 11%; left: 6%; }
+    .airpure-how-care-visual {
+        min-height: 330px;
+    }
+
+    .airpure-how-care-badge {
+        gap: 7px;
+        padding: 9px 11px;
+        font-size: 10px;
+    }
+
+    .airpure-how-care-badge-hepa {
+        top: 12%;
+        left: 4%;
+    }
+
+    .airpure-how-care-badge-carbon {
+        right: 3%;
+    }
+
+    .airpure-how-care-badge-uv {
+        bottom: 11%;
+        left: 6%;
+    }
 }
 
 /* AMC filter guide cards: rectangular photo thumbnails in place of icons */
